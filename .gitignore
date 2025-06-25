@@ -1,0 +1,42 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+
+# SwiftPM
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Firebase
+GoogleService-Info.plist
+
+# SwiftLint
+.swiftlint.yml
+
+# Logs and temp
+*.log
+*.swp
+*.tmp
+
+# IDE
+.idea/
+.vscode/
+
+# User-specific
+*.xcuserstate
+
+# DS_Store
+.DS_Store
