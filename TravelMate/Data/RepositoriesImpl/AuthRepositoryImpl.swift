@@ -17,4 +17,9 @@ final class AuthRepositoryImpl: AuthRepository {
         let user = try await dataSource.signIn(email: email, password: password)
         return User(id: user.uid, email: user.email ?? "")
     }
+    
+    func register(email: String, password: String) async throws -> User {
+        let user = try await dataSource.signUp(email: email, password: password)
+        return User(id: user.uid, email: user.email ?? "")
+    }
 }

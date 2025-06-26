@@ -20,5 +20,8 @@ final class AppDIContainer {
         container.register(LoginUserUseCase.self) { r in
             LoginUserUseCase(repository: r.resolve(AuthRepository.self)!)
         }
+        container.register(RegisterUserUseCase.self) { r in
+            RegisterUserUseCase(repository: r.resolve(AuthRepository.self)!)
+        }
     }
 }

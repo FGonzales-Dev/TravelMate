@@ -10,9 +10,11 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel
-
-    init(viewModel: LoginViewModel) {
+    let onSignUpTapped: () -> Void
+    
+    init(viewModel: LoginViewModel, onSignUpTapped: @escaping () -> Void) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        self.onSignUpTapped = onSignUpTapped
     }
 
     var body: some View {
@@ -34,6 +36,12 @@ struct LoginView: View {
                 }
             }
             .disabled(viewModel.isLoading)
+            
+            Button("Don't have an account? Sign Up") {
+                          onSignUpTapped()
+                      }
+                      .font(.footnote)
+                      .foregroundColor(.blue)
         }
         .padding()
     }

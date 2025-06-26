@@ -13,10 +13,12 @@ struct TravelMateApp: App {
     init() {
         FirebaseApp.configure()
     }
+
+    @State private var showSignUp = false
+
     var body: some Scene {
         WindowGroup {
-            let useCase = AppDIContainer.shared.container.resolve(LoginUserUseCase.self)!
-                        LoginView(viewModel: LoginViewModel(loginUseCase: useCase))
+            RootAuthSwitcher()
         }
     }
 }
