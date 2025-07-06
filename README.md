@@ -117,14 +117,6 @@ TravelMate/
 
 ---
 
-## 🧩 Extending the App
-
-- Add new features by creating new UseCases, Entities, and Repositories in the **Domain** layer.
-- Implement data access in **Data/DataSources** and **Data/RepositoriesImpl**.
-- Build new UI flows in **Presentation** using SwiftUI and MVVM.
-
----
-
 ## 🛠️ Tech Stack
 
 - **Swift**, **SwiftUI**
@@ -149,14 +141,6 @@ TravelMate/
 - [`AuthRepositoryImpl`](TravelMate/Data/RepositoriesImpl/AuthRepositoryImpl.swift)
 - [`FirebaseAuthDataSource`](TravelMate/Data/DataSources/FirebaseAuthDataSource.swift)
 - [`User`](TravelMate/Domain/Entities/User.swift)
-
----
-
-## 📬 Contributions
-
-Feel free to open issues or submit pull requests to improve the project!# 📱 TravelMate
-
-**TravelMate** is a mobile travel companion app built with **Swift**, **SwiftUI**, and **Firebase**, structured using **Clean Architecture** for modularity, testability, and scalability.
 
 ---
 
